@@ -17,7 +17,9 @@ int main(int argv, char** argc)
 	
 	if (child == 0) {
 		execv("exec/exec_me",NULL);
-	} else {		
+	}
+	else
+	{		
 		waitpid(child, &status , 0);
 		printf("pid(%d): %d",child, status);
 	}
