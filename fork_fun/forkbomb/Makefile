@@ -14,4 +14,4 @@ $(BINARY): $(OBJECTS)
 	 $(CC) $(CFLAGS) $(LPATHS) $(OBJECTS) -o $@ $(LDFLAGS)
 
 clean:
-	 rm -rf $(BINARY) $(OBJECTS) *.o
+	 rm $(BINARY) $(OBJECTS) *.o

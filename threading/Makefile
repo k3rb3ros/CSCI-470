@@ -3,9 +3,9 @@ INCLUDES=
 CFLAGS=-O0 $(INCLUDES) -Wall -Wextra
 LPATHS=
 LDFLAGS:=
-SOURCES=proc_share.cpp
+SOURCES=threading.cpp
 OBJECTS=$(SOURCES:.c=.o)
-BINARY=proc_share
+BINARY=threading
 
 all: $(BINARY) $(OBJECTS)
 .cpp.o:
