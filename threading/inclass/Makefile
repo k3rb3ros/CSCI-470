@@ -1,14 +1,14 @@
-CC=g++
+CC=gcc
 INCLUDES=
-CFLAGS=-O0 $(INCLUDES) -Wall -Wextra
+CFLAGS=-std="c99" -O0 $(INCLUDES) -Wall -Wextra
 LPATHS=
-LDFLAGS:=
-SOURCES=threading.cpp
-OBJECTS=$(SOURCES:.cpp=.o)
-BINARY=threading_n_stuff
+LDFLAGS=-lpthread
+SOURCES=pthread.c
+OBJECTS=$(SOURCES:.c=.o)
+BINARY=threading_yeah
 
 all: $(BINARY) $(OBJECTS)
-.cpp.o:
+.c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(BINARY): $(OBJECTS)
