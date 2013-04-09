@@ -2,7 +2,7 @@ CC=g++
 INCLUDES=
 CFLAGS=-O0 $(INCLUDES) -Wall -Wextra
 LPATHS=
-LDFLAGS:=
+LDFLAGS= -lpthread
 SOURCES=threading.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 BINARY=threading_n_stuff

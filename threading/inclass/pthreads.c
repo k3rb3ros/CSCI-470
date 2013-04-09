@@ -4,8 +4,6 @@
 
 #define THREADS 8
 
-void *workder(void *arg);
-
 typedef struct
 {
    int a;
