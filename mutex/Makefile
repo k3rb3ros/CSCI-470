@@ -2,10 +2,10 @@ CC=g++
 INCLUDES=
 CFLAGS=-O0 $(INCLUDES) -Wall -Wextra
 LPATHS=
-LDFLAGS= -lpthread
-SOURCES=threading.cpp
+LDFLAGS=-lSDL -lSDL_ttf -lpthread
+SOURCES=mutex.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-BINARY=threading_n_stuff
+BINARY=mutex_n_stuff
 
 all: $(BINARY) $(OBJECTS)
 .cpp.o:
