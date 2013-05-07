@@ -36,7 +36,7 @@ int main(int argc, char** argv)
       }
       else
       {
-	jobs[i].a = jobs[i-1].b+1;
+    	jobs[i].a = jobs[i-1].b+1;
         jobs[i].b = n;
       }
    }
